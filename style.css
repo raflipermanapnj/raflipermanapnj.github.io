@@ -1,0 +1,128 @@
+/* CSS RESET */
+html {
+  scroll-behavior: smooth;
+  background-image: url(img/bgwebni.jpg);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  background-color: #e66d1c;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.gambar-artikel {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 21);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.jumbotron {
+  background-image: url(img/jumbocoba.jpg);
+  /* background-color: #50c99a; */
+  background-size: cover;
+  text-align: center;
+  padding: 60px;
+  color: white;
+  font-size: 20px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 30px;
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  background-color: #e66d1c;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+header {
+  display: inline;
+}
+
+main {
+  display: flex;
+}
+
+#content {
+  flex-grow: 3;
+}
+
+aside {
+  flex-grow: 1;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+
+aside header {
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: rgb(240, 156, 60);
+  border-radius: 5px;
+  font-family: 800;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.jualan-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jualan-list li {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.jualan-list img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main {
+    flex-wrap: wrap;
+  }
+  #content,
+  aside {
+    width: 100%;
+  }
+}
